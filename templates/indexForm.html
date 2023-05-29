@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">TP4 DPBO 2023 C2</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="prodi.php">Prodi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="col-lg-6 m-auto">
+      <form method="post" action="index.php">
+        <br /><br />
+        <div class="card">
+          <div class="card-header bg-dark">
+            <h1 class="text-white text-center">DATA_TITLE Member</h1>
+          </div>
+          <br />
+          <input type="hidden" name="id" value="ID" class="form-control" /> <br />
+          <label> Name: </label>
+          <input type="text" name="name" value="NAMA" class="form-control" /> <br />
+          <label> Email: </label>
+          <input type="text" name="email" value="EMAIL" class="form-control" /> <br />
+          <label> Phone: </label>
+          <input type="text" name="phone" value="PHONE" class="form-control" /> <br />
+          <label> Join date: </label>
+          <input type="date" name="join_date" value="JOIN_DATE" class="form-control" /><br />
+          <label> Prodi: </label>
+          <div class="mb-5">
+            <select class="custom-select form-control" name="id_prodi">
+              <option selected>Pilih Prodi</option>
+              OPTION
+            </select>
+          </div>
+          <button class="btn btn-success" type="submit" name="ACTION">Submit</button><br />
+          <a class="btn btn-danger" type="submit" name="cancel" href="index.php"> Cancel </a><br />
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
